@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>misery</title>
+<link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+<h2 id="picker-title">bio</h2>
+<section id="picker-menu">
+  Hi, I'm a 18 yo programmer.<br><br>
+  I've been coding actively for two years.<br><br>
+  I mainly use c++<br><br>
+  learning x86-64 assembly and reversing rn<br><br>
+</section>
+<section class="picker-button-wrapper picker-buttons"><a href="../loading">
+  <a href="../">
+    <div class="button picker-button2"><span>Cancel</span></div>
+  </a>
+</section>
+  <audio id="click" src="/assets/click.mp3" type="audio/mp3"></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.button');
+    const clickSound = document.getElementById('clickSound');
+  
+        buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+      
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+});
+  </script>
+</body>
+</html>

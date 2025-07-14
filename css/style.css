@@ -42,7 +42,7 @@ footer {
 	background: #303030 url("../img/panorama.png") repeat-x 0 0;
 	background-size: cover;
 	animation: MinecraftBackground 700s linear infinite;
-	backdrop-filter: blur(14px);
+	backdrop-filter: blur(5px);
 }
 #logo {
 	margin-top: 3%;
@@ -61,7 +61,7 @@ footer {
 	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
 	box-shadow: inset -5px 0px 20px 2px #000, inset 5px 0px 20px 2px #000;
 	width: 100vw;
-	padding: 20vh 0;
+	padding: 28vh 0;
 }
 #picker-menu div {
 	width: 50%;
@@ -119,7 +119,6 @@ footer {
 	margin-bottom: 1.5%;
 }
 .picker-button2 {
-	display: inline-block;
 	width: 20%;
 }
 .picker-header {
@@ -175,4 +174,96 @@ footer .left {
 	100% {
 		background-position-x: 1000%;
 	}
+}
+
+
+@media (max-width: 768px) 
+{
+  body {
+    background-size: 15%; 
+  }
+
+  #panorama {
+    animation-duration: 700s; 
+    backdrop-filter: blur(3px); 
+  }
+
+  #logo {
+    width: 70%;
+    margin-top: 10%; 
+  }
+
+  #flashingtext {
+    font-size: 3.5vw;
+    margin: -4% 0 0 45%; 
+    width: 50%;
+  }
+
+  .button-wrapper {
+    width: 80% !important; 
+    margin: 12vw auto 0 auto !important;
+  }
+
+  .button {
+    font-size: 4vw !important;
+    padding: 1.5vw 0 !important;
+    margin-bottom: 3vw !important;
+    width: 100% !important; 
+  }
+
+  .small-buttons-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 6vw;
+  }
+
+  .button_small {
+    width: 48% !important;
+    font-size: 3.5vw !important;
+    padding: 1.2vw 0 !important;
+  }
+
+  footer {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  #logo {
+    width: 85%;
+    margin-top: 15%;
+  }
+
+  #flashingtext {
+    font-size: 4vw;
+    margin-top: -5%;
+  }
+
+  .button {
+    font-size: 4.5vw !important;
+    padding: 2vw 0 !important;
+  }
+
+  .button_small {
+    font-size: 4vw !important;
+  }
+}
+
+@media (max-width: 768px) and (orientation: landscape) 
+{
+  #logo {
+    width: 50%;
+    margin-top: 5%;
+  }
+
+  .button-wrapper {
+    margin-top: 5vw !important;
+  }
+
+  .button {
+    padding: 1vw 0 !important;
+    margin-bottom: 2vw !important;
+  }
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>yresim1</title>
+<title>misery</title>
 <link rel="stylesheet" href="css/style.css" />
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 <link rel="icon" href="favicon.ico" type="image/x-icon" />
@@ -11,23 +11,43 @@
 <body id="panorama">
 <img alt="Minecraft" id="logo" src="img/im_autistic.png" />
 <div id="flashingtext">a;sldkfja;sfd</div>
-<main class="button-wrapper"> <a href="worlds">
-  <div class="button"><span>Singleplayer</span></div>
-  </a> <a href="worlds">
-  <div class="button"><span>Multiplayer</span></div>
-  </a> <a href="worlds">
-  <div class="button"><span>Minecraft Realms</span></div>
-  </a> <a href="https://github.com/yresim1">
-  <div class="button button_small left"><span>Options...</span></div>
-  </a> <a href="/">
-  <div class="button button_small right"><span>Quit Game</span></div>
+<main class="button-wrapper">
+  <a href="bio">
+    <div class="button"><span>bio</span></div>
+  </a>
+  <a >
+    <div class="button"><span>...</span></div>
+  </a>
+  <a>
+  <div class="button"><span>...</span></div>
+  </a>
+  <a href="https://github.com/yresim1">
+    <div class="button button_small left"><span>my github</span></div>
+  </a>
+  <a>
+    <div class="button button_small right"><span>...</span></div>
   </a> </main>
+  <footer>
+     <span class="left">misery 0.0.1</span> <span class="right">Copyright Mojang AB. Do not distribute!</span>
+  </footer>
    <audio autoplay loop>
-      <source src="assets/subwoofer_lullaby.mp3" type="audio/mp3">
+      <source src="/assets/subwoofer_lullaby.mp3" type="audio/mp3">
     Your browser is ass
   </audio> 
-  <footer>
-     <span class="left">Misery 0.0.1</span> <span class="right">Copyright Mojang AB. Do not distribute!</span>
-  </footer>
+  <audio id="clickSound" src="/assets/click.mp3" type="audio/mp3"></audio>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    const buttons = document.querySelectorAll('.button');
+    const clickSound = document.getElementById('clickSound');
+  
+        buttons.forEach(button => {
+        button.addEventListener('click', function(e) {
+      
+      clickSound.currentTime = 0;
+      clickSound.play();
+    });
+  });
+});
+  </script>
 </body>
 </html>
